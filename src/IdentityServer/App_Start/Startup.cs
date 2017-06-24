@@ -35,7 +35,7 @@ namespace IdentityServer.App_Start
         X509Certificate2 LoadCertificate()
         {
             return new X509Certificate2(
-                string.Format(@"{0}\bin\IdentityServer\idsrv3test.pfx", AppDomain.CurrentDomain.BaseDirectory), "idsrv3test");
+                string.Format(@"{0}\IdentityServer\idsrv3test.pfx", AppDomain.CurrentDomain.BaseDirectory), "idsrv3test");//"idsrv3test"
         }
     }
 }
